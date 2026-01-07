@@ -34,12 +34,3 @@ This repo includes:
 - Practical data preparation: file conversion, renaming, folder organization
 
 ---
-
-## Setup
-
-### 1) Create environment (recommended)
-```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# Linux/Mac:
-source .venv/bin/activate
