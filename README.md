@@ -1,9 +1,45 @@
-# Image-classification-of-NORB
+# Image Classification on NORB (PyTorch)
 
-Image Classification of NORB Dataset, PyTorch datasets, data loaders, and augmentations are used and implemented.
-Training the classifiers using convolutional and linear networks.
-Analysing and explaining the differences of the results.
+Image classification on the (small) NORB dataset using PyTorch.  
+This repo includes:
+- dataset preparation (convert to `.jpg`, organize into class folders)
+- a custom PyTorch Dataset/DataLoader
+- training scripts for a CNN model and a linear baseline model
+- a short comparison of results between CNN vs Linear model
 
-Important things to be considered is that we converted the NORB dataset into .jpg formart,
-then we separated the images with their respective class folders via file separator code and renamed the files accordingly,
-then we used this train and test dataset as our dataloader and then implemented the rest of the operations.
+> Note: The dataset is prepared into image folders before training.
+
+---
+
+## Repository Structure
+
+- `DatasetNorb.py`  
+  PyTorch Dataset / DataLoader utilities for loading NORB images.  
+- `main_CNN.py`  
+  Training script for the CNN-based classifier.  
+- `main_LNN.py`  
+  Training script for the linear / fully-connected baseline classifier.  
+- `File separator.ipynb`  
+  Notebook used to reorganize / rename extracted NORB images into class-wise folders.  
+- `README.md`  
+  Project documentation.
+
+---
+
+## What You’ll Learn From This Project
+
+- Building a custom dataset pipeline in PyTorch (Dataset + DataLoader)
+- Training and evaluating image classifiers
+- Understanding why CNNs usually outperform linear models for vision tasks
+- Practical data preparation: file conversion, renaming, folder organization
+
+---
+
+## Setup
+
+### 1) Create environment (recommended)
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# Linux/Mac:
+source .venv/bin/activate
